@@ -6,19 +6,20 @@ from selenium.webdriver.support import expected_conditions as ec
 import time
 import pyautogui
 
-
+#get user details [INPUT]
 email = str(input("Email/Mob. No.  >>   "))
 password = str(input("Password  >>   "))
 meeting_id = str(input("Enter meeting id  >>   "))
 message = str(input("Type your message"))
 
+#[OUTPUT]
 print("Your job is going on.Please wait..   :)")
 
-
-driver = webdriver.Chrome("chromedriver.exe")
+#loading webdriver for chrome
+driver = webdriver.Chrome("chromedriver.exe") #supports only chrome browser
 wait = WebDriverWait(driver, 1000)  #waiting for expected conditions
 
-
+#main function starts
 driver.get("https://meta.stackexchange.com/users/login?returnurl=https%3a%2f%2fstackexchange.com%2fusers%2flogin-or-signup%2fdelegated%3freturnurl%3dhttps%253a%252f%252fstackexchange.com%253f_%253d998711021&cdl=1")
 
 driver.find_element_by_xpath("/html/body/div[3]/div/div/div[2]/button[1]").click()
@@ -62,8 +63,10 @@ driver.find_element_by_xpath(" /html/body/div[1]/c-wiz/div[1]/div/div[4]/div[3]/
 #chat enter  
 
 time.sleep(10)
-               
+ 
+#saving screenshot using pyautogui for future reference
 screenshot = pyautogui.screenshot()
 screenshot.save("attended.png")
 
 # Programmed By Chandan S Gowda
+# Visit www.chandansgowda.blogspot.com and know me better
