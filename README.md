@@ -1,5 +1,6 @@
 # GoogleMeet-FakeAttendance
 Bored of online classes? Then this python program is for you.
+Currently supports Chrome Browser only.
 This script prompts you to enter the meeting code and the message you wanna put into the chat section.
 Message example :
      [Your Name] is Present Sir/Mam
