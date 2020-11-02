@@ -6,6 +6,8 @@ from selenium.webdriver.support import expected_conditions as ec
 import time
 import pyautogui
 
+print("Give your Google account details")
+
 #get user details [INPUT]
 email = str(input("Email/Mob. No.  >>   "))
 password = str(input("Password  >>   "))
