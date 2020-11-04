@@ -15,7 +15,7 @@ meeting_id = str(input("Enter meeting id  >>   "))
 message = str(input("Type your message"))
 
 #[OUTPUT]
-print("Your job is going on.Please wait..   :)")
+print("Now just sit back and relax my friend")
 
 #loading webdriver for chrome
 driver = webdriver.Chrome("chromedriver.exe") #supports only chrome browser
